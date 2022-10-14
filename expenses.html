@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeteer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/dashboard.html">Dashboard</a>
+        <a class="active">Expenses</a>
+        <a href="/summary.html">Summary</a>
+        <a href="/budget.html">Budget</a>
+    </nav>
+    <main>
+
+        <section id="expenses">
+
+            <h2>Expenses</h2>
+
+            <form id="new-expense" class="clear">
+                <fieldset class="aligned">
+                    <label class="row-label"><input type="date" name="date"><span>Date</span></label>
+                    <label class="row-label"><input type="text" name="name"><span>Name</span></label>
+                    <label class="row-label">
+                        <select name="category">
+                            <option value="0">Other</option>
+                            <option value="1">Utilities</option>
+                            <option value="2">Groceries</option>
+                            <option value="3">Entertainment</option>
+                            <option value="4">Transport</option>
+                        </select>
+                        <span>Category</span>
+                    </label>
+                    <label class="row-label"><input type="number" name="amount" step="0.01"><span>Amount</span></label>
+
+                    <div class="centered">
+                        <button class="action">Save</button>
+                        <button class="action">Cancel</button>
+                    </div>
+
+                </fieldset>
+            </form>
+
+            <table class="editor">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>4.Jun</td>
+                        <td>Electricity</td>
+                        <td>Utilities</td>
+                        <td><span class="currency">100</span></td>
+                        <td><button>Edit</button><button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>4.Jun</td>
+                        <td>Water</td>
+                        <td>Utilities</td>
+                        <td><span class="currency">60</span></td>
+                        <td><button>Edit</button><button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>3.Jun</td>
+                        <td>Car Fuel</td>
+                        <td>Transportation</td>
+                        <td><span class="currency">35</span></td>
+                        <td><button>Edit</button><button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>1.Jun</td>
+                        <td>Weekly Shopping</td>
+                        <td>Groceries</td>
+                        <td><span class="currency">75</span></td>
+                        <td><button>Edit</button><button>Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+</body>
+
+</html>

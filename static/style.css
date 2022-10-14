@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    color: white;
+    /* background-color: rgb(19, 33, 44); */
+    background: linear-gradient(to bottom, rgb(19, 33, 44) 0, rgb(19, 33, 44) 60%, rgb(48, 83, 109));
+    height: 100%;
+}
+
+body {
+    width: 980px;
+    margin: auto;
+    margin-top: 16px;
+}
+
+.clear::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+nav a {
+    display: block;
+    float: left;
+    background-color: rgb(47, 59, 70);
+    padding: 16px 32px;
+    margin-right: 16px;
+}
+
+nav a:any-link:hover {
+    background-color: rgb(83, 123, 158);
+}
+
+.active {
+    background-color: rgb(56, 75, 92);
+}
+
+main {
+    background-color: rgb(56, 75, 92);
+    padding: 32px;
+}
+
+section {
+    min-height: 500px;
+}
+
+h2 {
+    border-bottom: 3px solid white;
+    margin: 16px 0;
+}
+
+.cat-row {
+    margin: 16px 0;
+    position: relative;
+}
+
+.row {
+    display: block;
+    float: left;
+}
+
+.cat-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.label {
+    width: 250px;
+    padding-right: 24px;
+    text-align: right;
+}
+
+.value {
+    width: 100px;
+    text-align: right;
+    padding-right: 24px;
+    position: relative;
+}
+
+.currency {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+.value::before,
+.currency::before {
+    content: "€";
+    left: 0;
+    position: absolute;
+}
+
+.bar-area {
+    display: block;
+    position: absolute;
+    left: 350px;
+    top: 0;
+    bottom: 0;
+}
+
+.bar {
+    display: block;
+    background-color: rgb(207, 123, 27);
+    height: 100%;
+}
+
+.left-col {
+    float: left;
+    width: 350px;
+    height: 150px;
+    margin-top: 150px;
+}
+
+.right-col {
+    float: left;
+    height: 300px;
+}
+
+.ov {
+    width: 100px;
+}
+
+.spent {
+    background-color: rgb(59, 112, 103);
+}
+
+.remain {
+    background-color: rgb(45, 177, 155);
+}
+
+.save {
+    background: repeating-linear-gradient(135deg, rgb(74, 115, 161), rgb(74, 115, 161) 20px, #969696 20px, #969696 40px);
+}
+
+.editor {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.editor td,
+.editor th {
+    border: 1px solid white;
+}
+
+.editor td {
+    text-align: center;
+}
+
+.editor th {
+    background-color: rgb(47, 59, 70);
+}
+
+button {
+    background-color: rgb(83, 123, 158);
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(98, 148, 192);
+    cursor: pointer;
+}
+
+.editor button {
+    font-size: 24px;
+    padding: 4px 16px;
+    margin: 4px;
+}
+
+form {
+    margin: 16px 0;
+}
+
+.aligned {
+    float: left;
+}
+
+.row-label {
+    display: block;
+    margin: 16px 0;
+}
+
+.row-label>* {
+    float: right;
+}
+
+.row-label::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row-label>span {
+    margin-right: 24px;
+}
+
+input,
+select {
+    font-size: 18px;
+    width: 250px;
+    padding: 4px 8px;
+}
+
+.action {
+    font-size: 24px;
+    padding: 4px 16px;
+    margin: 4px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.editor tfoot {
+    border-top: 5px solid white;
+}
+
+.total td,
+.total th {
+    background-color: rgb(59, 78, 112);
+}
+
+.overrun td,
+.overrun th {
+    background-color: #ff676785;
+}
+
+.savings td,
+.savings th {
+    background-color: #67ffa185;
+}

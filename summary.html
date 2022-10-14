@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeteer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/dashboard.html">Dashboard</a>
+        <a href="/expenses.html">Expenses</a>
+        <a class="active">Summary</a>
+        <a href="/budget.html">Budget</a>
+    </nav>
+    <main>
+
+        <section id="summary">
+
+            <h2>Summary</h2>
+
+            <button class="action">&lt; Previous</button>
+            <button class="action">Next &gt;</button>
+
+            <table class="editor">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Jan</th>
+                        <th>Feb</th>
+                        <th>Mar</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Utilities</th>
+                        <td><span class="currency">380</span></td>
+                        <td><span class="currency">410</span></td>
+                        <td><span class="currency">360</span></td>
+                        <th><span class="currency">1150</span></th>
+                    </tr>
+                    <tr>
+                        <th>Groceries</th>
+                        <td><span class="currency">510</span></td>
+                        <td><span class="currency">480</span></td>
+                        <td><span class="currency">535</span></td>
+                        <th><span class="currency">1525</span></th>
+                    </tr>
+                    <tr>
+                        <th>Entertainment</th>
+                        <td><span class="currency">225</span></td>
+                        <td><span class="currency">270</span></td>
+                        <td><span class="currency">245</span></td>
+                        <th><span class="currency">740</span></th>
+                    </tr>
+                    <tr>
+                        <th>Transport</th>
+                        <td><span class="currency">180</span></td>
+                        <td><span class="currency">110</span></td>
+                        <td><span class="currency">240</span></td>
+                        <th><span class="currency">530</span></th>
+                    </tr>
+                    <tr>
+                        <th>Other</th>
+                        <td><span class="currency">550</span></td>
+                        <td><span class="currency">505</span></td>
+                        <td><span class="currency">485</span></td>
+                        <th><span class="currency">640</span></th>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="total">
+                        <th>Total Spent</th>
+                        <td><span class="currency">1845</span></td>
+                        <td><span class="currency">1775</span></td>
+                        <td><span class="currency">1865</span></td>
+                        <th><span class="currency">5485</span></th>
+                    </tr>
+                    <tr class="overrun">
+                        <th>Budget Overruns</th>
+                        <td><span class="currency">25</span></td>
+                        <td><span class="currency">0</span></td>
+                        <td><span class="currency">45</span></td>
+                        <th><span class="currency">70</span></th>
+                    </tr>
+                    <tr class="savings">
+                        <th>Savings</th>
+                        <td><span class="currency">205</span></td>
+                        <td><span class="currency">250</span></td>
+                        <td><span class="currency">185</span></td>
+                        <th><span class="currency">640</span></th>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </section>
+        
+    </main>
+</body>
+
+</html>

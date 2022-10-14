@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeteer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/dashboard.html">Dashboard</a>
+        <a href="/expenses.html">Expenses</a>
+        <a href="/summary.html">Summary</a>
+        <a class="active">Budget</a>
+    </nav>
+    <main>
+
+        <section id="budget">
+
+            <h2>Budget</h2>
+
+            <form id="new-budget" class="clear">
+                <fieldset class="aligned">
+                    <label class="row-label"><input type="text" name="month"
+                            placeholder="04-2018"><span>Month</span></label>
+                    <label class="row-label"><input type="number" name="income" step="1"><span>Income</span></label>
+                    <label class="row-label"><input type="number" name="budget" step="1"><span>Budget</span></label>
+
+                    <div class="centered">
+                        <button class="action">Save</button>
+                        <button class="action">Cancel</button>
+                    </div>
+
+                </fieldset>
+            </form>
+
+            <table class="editor">
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Income</th>
+                        <th>Budget</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mar.2018</td>
+                        <td><span class="currency">2050</span></td>
+                        <td><span class="currency">1820</span></td>
+                        <td><button>Edit</button><button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Feb.2018</td>
+                        <td><span class="currency">2025</span></td>
+                        <td><span class="currency">1800</span></td>
+                        <td><button>Edit</button><button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Jan.2018</td>
+                        <td><span class="currency">2050</span></td>
+                        <td><span class="currency">1820</span></td>
+                        <td><button>Edit</button><button>Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeteer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <nav>
+        <a class="active">Dashboard</a>
+        <a href="/expenses.html">Expenses</a>
+        <a href="/summary.html">Summary</a>
+        <a href="/budget.html">Budget</a>
+    </nav>
+    <main>
+
+        <section id="dashboard">
+            <article class="clear">
+
+                <h2>Overview</h2>
+
+                <div class="left-col">
+
+                    <div class="cat-row">
+                        <span class="row label">Spent</span>
+                        <span class="row value">1120</span>
+                    </div>
+
+                    <div class="cat-row">
+                        <span class="row label">Remaining</span>
+                        <span class="row value">800</span>
+                    </div>
+
+                    <div class="cat-row">
+                        <span class="row label">Savings</span>
+                        <span class="row value">480</span>
+                    </div>
+
+                </div>
+
+                <div class="right-col">
+                    <div class="ov spent" style="height: 140px;"></div>
+                    <div class="ov remain" style="height: 100px;"></div>
+                    <div class="ov save" style="height: 60px;"></div>
+                </div>
+
+            </article>
+
+            <article>
+
+                <h2>Breakdown</h2>
+
+                <div class="cat-row">
+                    <span class="row label">Utilities</span>
+                    <span class="row value">350</span>
+                    <div class="bar-area">
+                        <span class="bar" style="width: 350px"></span>
+                    </div>
+                </div>
+                <div class="cat-row">
+                    <span class="row label">Groceries</span>
+                    <span class="row value">300</span>
+                    <div class="bar-area">
+                        <span class="bar" style="width: 300px"></span>
+                    </div>
+                </div>
+                <div class="cat-row">
+                    <span class="row label">Entertainment</span>
+                    <span class="row value">150</span>
+                    <div class="bar-area">
+                        <span class="bar" style="width: 150px"></span>
+                    </div>
+                </div>
+                <div class="cat-row">
+                    <span class="row label">Transport</span>
+                    <span class="row value">180</span>
+                    <div class="bar-area">
+                        <span class="bar" style="width: 180px"></span>
+                    </div>
+                </div>
+                <div class="cat-row">
+                    <span class="row label">Other</span>
+                    <span class="row value">140</span>
+                    <div class="bar-area">
+                        <span class="bar" style="width: 140px"></span>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+
+    </main>
+</body>
+
+</html>
